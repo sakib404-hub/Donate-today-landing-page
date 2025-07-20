@@ -15,6 +15,11 @@
   font-weight: 400;
   font-style: normal;
 }
+.lobster-regular {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 .btn-primary{
     background-color: #FF5959;
     color: white;
@@ -182,7 +187,49 @@
     align-items: center;
     border: 2px solid red;
 } */
+ /* My Update  */
+ .myupdate{
+    height: auto;
+    max-width: 690px;
+    margin: 140px auto;
+    text-align: center;
+ }
+ .input{
+    max-width: 800px;
+    background-color: rgba(255, 255, 0, 0.301);
+    margin: 140px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 100px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.281);
+ }
 
+ .input input{
+    width: calc(100% - 320px);
+    border: none;
+    padding: 8px 16px;
+    background-color: aliceblue;
+ }
+ .btn01{
+     width: 120px;
+     padding: 8px 16px;
+     border: none;
+     background-color: #FF5959;
+     color: white;
+ }
+ footer{
+    min-height: 140px;
+    width: 100%;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(18, 18, 18, 1);
+    color: white;
+ }
 /* Responsive  */
 @media screen and (max-width:576px){
     .donation-quantity-container{
@@ -191,11 +238,15 @@
     .donate-container{
         grid-template-columns: repeat(1, 1fr);
     }
-    .condition-box{
+    .condition-box, .input{
         flex-direction: column;
+        gap: 20px;
     }
     .condition-image > img{
         height: 200px;
+    }
+    .input input{
+        width: 80%;
     }
 }
 
